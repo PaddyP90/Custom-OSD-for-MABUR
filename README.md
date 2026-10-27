@@ -1,6 +1,6 @@
 # PADDY Fonts for MSPOSD
 
-Custom OSD fonts for the **Mabus FPV system**, designed for use with [`msposd`](https://github.com/OpenIPC/msposd).
+Custom OSD fonts for the **Mabur FPV system**, designed for use with [`msposd`](https://github.com/OpenIPC/msposd).
 
 Two styles, three font files:
 
@@ -56,13 +56,13 @@ The full all-green neon, fighter-HUD inspired character set.
 ## Installation
 
 1. Download the `.mfont` file you want from the [`fonts/`](fonts/) folder.
-2. Copy it to the font location usr/local/share/mabur folder on your Mabus unit ( via `scp` ):
+2. Copy it to the font location usr/local/share/mabur folder on your Mabur unit ( via `scp` ):
 
    ```bash
    scp fonts/PADDY_green.mfont root@<device-ip>:/usr/share/fonts/
    ```
 
-   > **Note:** The exact font directory and file name `msposd` expects depends on your firmware build. Check your Mabus / `msposd` documentation and adjust the path above.
+   > **Note:** The exact font directory and file name `msposd` expects depends on your firmware build. Check your Mabur / `msposd` documentation and adjust the path above.
 3. Make sure the font is the one `msposd` loads (replace or rename the default font file, or point your config to the new file).
 4. Reboot the unit and the new font will be used.
 
@@ -86,4 +86,4 @@ Found a glyph that looks off or have an idea for another style? Open an issue or
 ## Credits
 
 - Designed by **PADDY**
-- Built for the Mabus FPV system 
+- Built for the Mabur FPV system 
