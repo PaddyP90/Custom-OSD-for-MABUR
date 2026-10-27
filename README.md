@@ -56,7 +56,7 @@ The full all-green neon, fighter-HUD inspired character set.
 ## Installation
 
 1. Download the `.mfont` file you want from the [`fonts/`](fonts/) folder.
-2. Copy it to the font location used by `msposd` on your Mabus unit (for example via `scp` or the web file manager):
+2. Copy it to the font location usr/local/share/mabur folder on your Mabus unit ( via `scp` ):
 
    ```bash
    scp fonts/PADDY_green.mfont root@<device-ip>:/usr/share/fonts/
@@ -64,7 +64,7 @@ The full all-green neon, fighter-HUD inspired character set.
 
    > **Note:** The exact font directory and file name `msposd` expects depends on your firmware build. Check your Mabus / `msposd` documentation and adjust the path above.
 3. Make sure the font is the one `msposd` loads (replace or rename the default font file, or point your config to the new file).
-4. Restart `msposd` (or reboot the unit) and the new font will be used.
+4. Reboot the unit and the new font will be used.
 
 > Tip: keep a backup of your original font file before replacing it.
 
@@ -82,11 +82,8 @@ The `.mfont` files are binary font files with an `MFNT` header, around 7.6 MB ea
 
 Found a glyph that looks off or have an idea for another style? Open an issue or send a pull request with screenshots.
 
-## License
-
-Choose a license for the repo (e.g. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or MIT) and add a `LICENSE` file.
 
 ## Credits
 
 - Designed by **PADDY**
-- Built for the Mabus FPV system and [`msposd`](https://github.com/OpenIPC/msposd)
+- Built for the Mabus FPV system 
